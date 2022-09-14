@@ -78,7 +78,7 @@ async function vote(parent, args, context, info) {
   const { userId } = context;
   const vote = await context.prisma.vote.findUnique({
     where: {
-      linkId_UserId: {
+      linkId_userId: {
         linkId: Number(args.linkId),
         userId: userId,
       },

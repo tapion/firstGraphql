@@ -13,20 +13,20 @@ const Subscription = require('./resolvers/Subscription');
 const prisma = new PrismaClient();
 const pubSub = new PubSub();
 
-let links = [
-  {
-    id: "link-0",
-    description: "Description`s link",
-    url: "www.url.com",
-    hola: "amigosss",
-  },
-  {
-    id: "link-1",
-    description: "New description`s link",
-    url: "www.url2123123.com",
-    hola: "amigo",
-  },
-];
+// let links = [
+//   {
+//     id: "link-0",
+//     description: "Description`s link",
+//     url: "www.url.com",
+//     hola: "amigosss",
+//   },
+//   {
+//     id: "link-1",
+//     description: "New description`s link",
+//     url: "www.url2123123.com",
+//     hola: "amigo",
+//   },
+// ];
 
 const resolvers = {
     Query,
